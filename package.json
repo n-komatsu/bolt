@@ -26,5 +26,8 @@
     "undertaker-registry": "^1.0.1",
     "webpack": "^4.24.0",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

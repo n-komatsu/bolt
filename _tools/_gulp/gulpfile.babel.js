@@ -13,4 +13,4 @@ gulp.registry(watchStylus);
 gulp.registry(browser);
 gulp.registry(copy);
 
-gulp.task('default', gulp.series('pugCompile:dev', 'stylusCompile:dev', 'copyStatics:dev', 'staticServer:dev', 'watchPug', 'watchStylus'));
+gulp.task('default', gulp.series('pugCompile:dev', 'stylusCompile:dev', 'copyStatics:dev',  'watchPug', 'watchStylus', 'staticServer:dev'));

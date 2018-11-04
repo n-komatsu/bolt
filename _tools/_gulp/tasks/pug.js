@@ -7,7 +7,9 @@ class MyTask extends Registry {
   init(gulp) {
     return gulp.task('pugCompile:dev', callback => {
       gulp.src(config.develop.pugSrc)
-          .pipe(pug())
+          .pipe(pug({
+            pretty: true,
+          }))
           .pipe(gulp.dest(config.develop.pugOutput));
       callback();
     });

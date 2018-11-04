@@ -1,0 +1,41 @@
+.p-sns-links
+  background: bg-gray;
+  padding: 200px 0;
+  .inner
+    max-width: 780px;
+    margin: 0 auto;
+    ul
+      display: flex;
+      justify-content: space-around;
+      li
+        width: 25%;
+        a
+          display: block;
+          transition: all .3s;
+          padding: 30px;
+          text-align: center;
+          cursor: pointer;
+          text-decoration: none;
+          &:hover
+            background: #fff;
+          .is-awesome
+            font-size: 50px;
+            color: cv-color;
+            &:before
+              font-family: 'FontAwesome';
+@media screen and (min-width 768px) and (max-width 1100px)
+  .p-sns-links
+    .inner
+      width: 97%;
+      margin: 0 auto;
+@media screen and (max-width 767px)
+  .p-sns-links
+    padding: 50px 0;
+    .inner
+      width: 97%;
+      margin: 0 auto;
+      ul
+        display: block;
+        li
+          width: calc(100% - 15px);
+          margin: 0 auto;
